@@ -12,7 +12,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // const bigNumber = 3456543576654356754n
 
@@ -29,9 +29,43 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log("Hello world");
+    // console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+// Stack=>(Primitive Data Types) && Heap =>(Non-Primitive Data Types)
+
+// example of stack
+let myName="Prakash"
+
+let anotherName=myName
+
+anotherName="Ravi"
+
+// console.log(myName);
+// console.log(anotherName);
+
+
+
+
+//In case of Heap 
+
+let officeBoy={
+    name:"Raj",
+    number:98765
+}
+
+let anotherOffice= officeBoy;
+
+anotherOffice.number=12345
+
+console.log(officeBoy);
+console.log(anotherOffice);
