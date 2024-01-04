@@ -7,6 +7,9 @@ const scoreValue = 100.3
 
 const isLoggedIn = false
 const outsideTemp = null
+
+console.log( "null==>" + typeof outsideTemp );
+
 let userEmail;
 
 const id = Symbol('123')
@@ -29,9 +32,10 @@ let myObj = {
 }
 
 const myFunction = function(){
-    // console.log("Hello world");
+    console.log("Hello world");
 }
 
+console.log(typeof myFunction());
 // console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
@@ -62,6 +66,8 @@ let officeBoy={
     name:"Raj",
     number:98765
 }
+
+console.log(typeof officeBoy);
 
 let anotherOffice= officeBoy;
 
